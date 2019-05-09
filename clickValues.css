@@ -4,13 +4,33 @@
     padding: 0;
     box-sizing: border-box;/*forces the browser to account for total added box dimensions*/
 }
+body {
+    background-color: #C4DACF;
+    text-align: center;
+}
 
-.incrementValue {
+#clickWrapper {
+    margin-right: auto;
+    margin-left: auto;
+    
+    border-radius: 15px;
+    background: #998DA0;
+    height: 100px;
+    width: 150px;
+}
+
+#iValue {
+    font: bold 24px Arial, sans-serif;
+    padding: 10px;
+    
+}
+
+#iButton {
     font: bold 14px Arial, sans-serif;
     
 }
 
-.incrementButton {
+#dButton {
     font: bold 14px Arial, sans-serif;
     
 }
