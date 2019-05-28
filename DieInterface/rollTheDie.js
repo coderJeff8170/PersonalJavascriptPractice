@@ -7,3 +7,4 @@ function rollDie() {
     document.getElementById("die").src = dieArray[roll]; 
 }
 //yay!
+//ok, now do six with one roll.
