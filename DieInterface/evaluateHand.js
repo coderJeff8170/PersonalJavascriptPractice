@@ -1,4 +1,4 @@
-let currentHand = [1, 5, 1, 3, 1, 4];
+let currentHand = [1, 5, 1, 3, 5, 3];
 let crntPnts = 0;
 
 //put hand in order, to check for pairs
@@ -24,6 +24,11 @@ function evalHand(hand) {
     let fours = hand.filter(x => x === 4);
     let fives = hand.filter(x => x === 5);
     let sixes = hand.filter(x => x === 6);
+
+    if (hand[0] === hand[1] && hand[2] === hand[3] && hand[4] === hand[5]) {
+        crntPnts = crntPnts + 500;
+        return;
+    }
 
     if (ones.length === 3) {
         crntPnts = crntPnts + 1000;
